@@ -16,4 +16,4 @@ jobs:
     - name: Setup MSBuild
       uses: warrenbuckley/Setup-MSBuild@v1     
     - name: Build With MSBuild
-      run: msbuild CountriesWrapper/CountriesWrapper.sln  -p:Configuration=Release
+      run: msbuild CountriesWrapper/CountriesWrapper.sln
