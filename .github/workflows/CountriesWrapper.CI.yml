@@ -1,0 +1,19 @@
+name: CountriesWrapper.CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1      
+    - name: Restore Packages
+      run: nuget restore CountriesWrapper/CountriesWrapper.sln  
+    - name: Setup MSBuild
+      uses: warrenbuckley/Setup-MSBuild@v1     
+    - name: Build With MSBuild
+      run: msbuild CountriesWrapper/CountriesWrapper.sln  -p:Configuration=Release
