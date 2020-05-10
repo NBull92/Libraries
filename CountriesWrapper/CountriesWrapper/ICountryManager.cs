@@ -5,7 +5,7 @@ namespace CountriesWrapper
 {
     public interface ICountryManager
     {
-        Task Initialise();
+        Task InitialiseAsync();
         IEnumerable<Country> GetCountries();
         Country GetCountry(string countryName);
     }
