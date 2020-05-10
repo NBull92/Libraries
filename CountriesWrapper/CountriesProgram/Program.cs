@@ -7,8 +7,13 @@ namespace CountriesProgram
     {
         static void Main(string[] args)
         {
+            Run();
+        }
+
+        private static async void Run()
+        {
             ICountryManager manager = new CountryManager();
-            manager.Initialise();
+            await manager.Initialise();
             var countries = manager.GetCountries();
 
             foreach (var country in countries)

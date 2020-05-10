@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace CountriesWrapper
 {
@@ -11,7 +12,7 @@ namespace CountriesWrapper
         private const string Url = "https://restcountries.eu/rest/v2/";
         private readonly IRepository<Country> _repository = new CountryRepository();
 
-        public async void Initialise()
+        public async Task Initialise()
         {
             var client = new HttpClient { BaseAddress = new Uri(Url) };
 
