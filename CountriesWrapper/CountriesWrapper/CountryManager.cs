@@ -12,7 +12,7 @@ namespace CountriesWrapper
         private const string Url = "https://restcountries.eu/rest/v2/";
         private readonly IRepository<Country> _repository = new CountryRepository();
 
-        public async Task Initialise()
+        public async Task InitialiseAsync()
         {
             var client = new HttpClient { BaseAddress = new Uri(Url) };
 
