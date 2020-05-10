@@ -50,8 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Country.cs" />
+    <Compile Include="CountryManager.cs" />
+    <Compile Include="CountryRepository.cs" />
     <Compile Include="Currency.cs" />
     <Compile Include="ICountryManager.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
