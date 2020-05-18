@@ -10,7 +10,7 @@ namespace CountriesWrapper
     public class CountryManager : ICountryManager
     {
         private const string Url = "https://restcountries.eu/rest/v2/";
-        private readonly IRepository<Country> _repository = new CountryRepository();
+        private IRepository<Country> _repository = new CountryRepository();
 
         public async Task InitialiseAsync()
         {
@@ -31,7 +31,7 @@ namespace CountriesWrapper
             }
             else
             {
-                throw new Exception(response.RequestMessage.ToString());
+                throw new Exception($"Unable to obtain the country list due to: {response.RequestMessage}");
             }
             
             client.Dispose();
@@ -46,5 +46,11 @@ namespace CountriesWrapper
         {
             return _repository.Get(countryName);
         }
+
+        public void SetRepository(IRepository<Country> repository)
+        {
+            _repository = repository;
+        }
+
     }
 }

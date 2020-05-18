@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesWrapper", "Countri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesProgram", "CountriesProgram\CountriesProgram.csproj", "{FF56EFF6-A9E9-43DC-8297-133F3BDCE82E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesWrapper.Tests", "CountriesWrapper.Tests\CountriesWrapper.Tests.csproj", "{489A45B7-AB27-421F-9DA3-60BA973292D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FF56EFF6-A9E9-43DC-8297-133F3BDCE82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF56EFF6-A9E9-43DC-8297-133F3BDCE82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF56EFF6-A9E9-43DC-8297-133F3BDCE82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489A45B7-AB27-421F-9DA3-60BA973292D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489A45B7-AB27-421F-9DA3-60BA973292D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489A45B7-AB27-421F-9DA3-60BA973292D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489A45B7-AB27-421F-9DA3-60BA973292D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

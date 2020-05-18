@@ -8,5 +8,6 @@ namespace CountriesWrapper
         Task InitialiseAsync();
         IEnumerable<Country> GetCountries();
         Country GetCountry(string countryName);
+        void SetRepository(IRepository<Country> repository);
     }
 }
