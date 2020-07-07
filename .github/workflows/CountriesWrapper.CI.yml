@@ -15,9 +15,3 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1     
     - name: Build With MSBuild
       run: msbuild CountriesWrapper/CountriesWrapper.sln
-  tests:
-    name: Unit Testing
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2.1.0
-      - run: dotnet test
